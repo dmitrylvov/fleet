@@ -7,5 +7,6 @@ helm:
   valuesFiles:
     - helm/values.yaml
 resources:
-  - templates/ippool.yaml
-  - templates/l2advertisement.yaml
+- name: "metallb-range"
+  path: "metallb/templates/ippool.yaml"
+  path: "metallb/templates/l2advertisement.yaml"
