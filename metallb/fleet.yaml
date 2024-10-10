@@ -5,8 +5,8 @@ helm:
   repo: https://metallb.github.io/metallb
   version: 0.14.8
   valuesFiles:
-    - metallb/values.yaml
+    - values.yaml
 resources:
 - name: "metallb-range"
-  path: "metallb/templates/ippool.yaml"
-  path: "metallb/templates/l2advertisement.yaml"
+  path: "templates/ippool.yaml"
+  path: "templates/l2advertisement.yaml"
