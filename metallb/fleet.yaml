@@ -1,12 +1,11 @@
-helmRepos:
-  - url: https://metallb.github.io/metallb
+defaultNamespace: metallb-system
 helm:
   chart: metallb/metallb
   releaseName: metallb
+  repo: https://metallb.github.io/metallb
   version: 0.14.8
-  namespace: metallb-system
   valuesFiles:
     - helm/values.yaml
 resources:
-  - resources/ippool.yaml
-  - resources/l2advertisement.yaml
+  - templates/ippool.yaml
+  - templates/l2advertisement.yaml
