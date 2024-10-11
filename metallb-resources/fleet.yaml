@@ -3,4 +3,4 @@ dependsOn:
   - name: helm-metallb
 resources:
   - ippool.yaml
-  - l2advertisement.yaml
+  - l2Advertisement.yaml
