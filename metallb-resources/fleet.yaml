@@ -1,6 +1,3 @@
 defaultNamespace: metallb-system
 dependsOn:
   - name: helm-metallb
-resources:
-  - ippool.yaml
-  - l2Advertisement.yaml
